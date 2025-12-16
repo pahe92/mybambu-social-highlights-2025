@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBambu Social Media Highlights 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --mybambu-green: #27FB6B;
+            --mybambu-dark: #00052E;
+            --mybambu-blue: #0156F4;
+            --mybambu-light: #F8FAFB;
+            --mybambu-midnight: #000312;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--mybambu-dark) 0%, var(--mybambu-midnight) 100%);
+            color: white;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid rgba(39, 251, 107, 0.2);
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--mybambu-green);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .period {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+
+        /* Key Wins */
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--mybambu-green);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .key-wins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .win-card {
+            background: linear-gradient(135deg, rgba(39, 251, 107, 0.1) 0%, rgba(1, 86, 244, 0.1) 100%);
+            border: 1px solid rgba(39, 251, 107, 0.2);
+            border-radius: 16px;
+            padding: 28px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .win-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--mybambu-green);
+        }
+
+        .win-number {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--mybambu-green);
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .win-label {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        /* Platform Snapshot */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .platform-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 32px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .platform-card:hover {
+            border-color: var(--mybambu-green);
+            transform: scale(1.02);
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .platform-icon {
+            font-size: 32px;
+        }
+
+        .platform-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .platform-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--mybambu-green);
+        }
+
+        .platform-insight {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            background: rgba(39, 251, 107, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--mybambu-green);
+        }
+
+        /* Top Content */
+        .top-content-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 28px;
+            border-left: 4px solid var(--mybambu-green);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(8px);
+        }
+
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+        }
+
+        .content-platform {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--mybambu-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content-engagement {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--mybambu-green);
+        }
+
+        .content-description {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .content-why {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+            padding: 10px;
+            background: rgba(39, 251, 107, 0.05);
+            border-radius: 8px;
+        }
+
+        /* Community Impact */
+        .impact-list {
+            list-style: none;
+            display: grid;
+            gap: 20px;
+        }
+
+        .impact-item {
+            background: linear-gradient(90deg, rgba(39, 251, 107, 0.15) 0%, transparent 100%);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--mybambu-green);
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* What's Next */
+        .next-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .next-item {
+            background: rgba(1, 86, 244, 0.1);
+            border: 2px solid rgba(1, 86, 244, 0.3);
+            padding: 24px;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .next-item:hover {
+            border-color: var(--mybambu-green);
+            transform: scale(1.05);
+        }
+
+        .next-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--mybambu-blue);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .next-text {
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Closing */
+        .closing {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(39, 251, 107, 0.2) 0%, rgba(1, 86, 244, 0.2) 100%);
+            border-radius: 20px;
+            border: 2px solid var(--mybambu-green);
+        }
+
+        .closing-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--mybambu-green);
+            line-height: 1.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 24px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .key-wins-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .platform-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .next-list {
+                grid-template-columns: 1fr;
+            }
+
+            .closing-text {
+                font-size: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: var(--mybambu-dark);
+            }
+
+            .container {
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>MyBambu Social Media Highlights</h1>
+            <p class="period">January 1 – December 31, 2025</p>
+        </header>
+
+        <!-- Key Wins -->
+        <section class="section">
+            <h2 class="section-title">🔥 Key Wins</h2>
+            <div class="key-wins-grid">
+                <div class="win-card">
+                    <div class="win-number">290K+</div>
+                    <div class="win-label">Total Community</div>
+                </div>
+                <div class="win-card">
+                    <div class="win-number">26.1M</div>
+                    <div class="win-label">Total Impressions</div>
+                </div>
+                <div class="win-card">
+                    <div class="win-number">24.4M</div>
+                    <div class="win-label">Video Views</div>
+                </div>
+                <div class="win-card">
+                    <div class="win-number">213K</div>
+                    <div class="win-label">Total Engagement</div>
+                </div>
+                <div class="win-card">
+                    <div class="win-number">1,627</div>
+                    <div class="win-label">Posts Published</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Snapshot -->
+        <section class="section">
+            <h2 class="section-title">📱 Platform Snapshot</h2>
+            <div class="platform-grid">
+                <!-- TikTok -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <span class="platform-icon">📱</span>
+                        <h3 class="platform-name">TikTok</h3>
+                    </div>
+                    <div class="platform-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Impressions</span>
+                            <span class="stat-value">22.2M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Reactions</span>
+                            <span class="stat-value">88K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Share of Voice</span>
+                            <span class="stat-value">85%</span>
+                        </div>
+                    </div>
+                    <div class="platform-insight">
+                        TikTok dominates reach with 85% of total impressions. Short-form video drives massive visibility.
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <span class="platform-icon">📸</span>
+                        <h3 class="platform-name">Instagram</h3>
+                    </div>
+                    <div class="platform-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Impressions</span>
+                            <span class="stat-value">2.1M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Reactions</span>
+                            <span class="stat-value">22.5K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Top Post</span>
+                            <span class="stat-value">930 likes</span>
+                        </div>
+                    </div>
+                    <div class="platform-insight">
+                        Contests and giveaways drive highest engagement. Community loves interactive content.
+                    </div>
+                </div>
+
+                <!-- Facebook -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <span class="platform-icon">👥</span>
+                        <h3 class="platform-name">Facebook</h3>
+                    </div>
+                    <div class="platform-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Impressions</span>
+                            <span class="stat-value">312K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Reactions</span>
+                            <span class="stat-value">46.4K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Top Post</span>
+                            <span class="stat-value">2,452 likes</span>
+                        </div>
+                    </div>
+                    <div class="platform-insight">
+                        Highest engagement rate per impression. Referral campaigns resonate strongly with community.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Content -->
+        <section class="section">
+            <h2 class="section-title">⭐ Top Performing Content</h2>
+            <div class="top-content-grid">
+                <div class="content-card">
+                    <div class="content-header">
+                        <span class="content-platform">Facebook</span>
+                        <span class="content-engagement">2,452 👍</span>
+                    </div>
+                    <p class="content-description">
+                        <strong>"¡Gana $40 con MyBambu!"</strong> – Referral campaign rewarding users for sharing MyBambu with friends who make their first mobile recharge.
+                    </p>
+                    <p class="content-why">
+                        <strong>Why it worked:</strong> Incentivized sharing + clear call-to-action. Community values earning opportunities that help friends.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="content-header">
+                        <span class="content-platform">Facebook</span>
+                        <span class="content-engagement">2,226 👍</span>
+                    </div>
+                    <p class="content-description">
+                        <strong>"¡Gana más con MyBambu!"</strong> – Savings campaign encouraging users to take control of their finances and start saving today.
+                    </p>
+                    <p class="content-why">
+                        <strong>Why it worked:</strong> Empowerment messaging. Spoke directly to financial freedom and aspirations of the community.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="content-header">
+                        <span class="content-platform">Instagram</span>
+                        <span class="content-engagement">930 ❤️</span>
+                    </div>
+                    <p class="content-description">
+                        <strong>"GANA $50"</strong> – Trivia contest with three questions, requiring hashtag #MyBambuPaga and direct message with email to enter.
+                    </p>
+                    <p class="content-why">
+                        <strong>Why it worked:</strong> Interactive gamification + prize incentive. Multi-step engagement builds excitement and participation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Impact -->
+        <section class="section">
+            <h2 class="section-title">💚 Community Impact</h2>
+            <ul class="impact-list">
+                <li class="impact-item">
+                    <strong>Empowering Financial Freedom:</strong> Content focused on savings, cashback, and smart money management reached 26M+ impressions, helping the unbanked/underbanked Latino community access tools for financial independence.
+                </li>
+                <li class="impact-item">
+                    <strong>Building Trust Through Transparency:</strong> Campaigns like fee-free ATM deposits and international transfers educated users about hidden fees other banks charge, positioning MyBambu as the transparent choice.
+                </li>
+                <li class="impact-item">
+                    <strong>Cultural Connection & Representation:</strong> Content in Spanish with culturally relevant messaging (#LatinoProblems, Father's Day tribute) created authentic emotional connections with 290K+ community members.
+                </li>
+            </ul>
+        </section>
+
+        <!-- What's Next -->
+        <section class="section">
+            <h2 class="section-title">🚀 What's Next</h2>
+            <div class="next-list">
+                <div class="next-item">
+                    <div class="next-number">01</div>
+                    <p class="next-text">
+                        <strong>Double down on TikTok:</strong> Increase short-form video production by 40%. Leverage viral trends with financial literacy education.
+                    </p>
+                </div>
+                <div class="next-item">
+                    <div class="next-number">02</div>
+                    <p class="next-text">
+                        <strong>Scale referral campaigns:</strong> Expand "Gana $" contests across all platforms. Build ambassador program with top community members.
+                    </p>
+                </div>
+                <div class="next-item">
+                    <div class="next-number">03</div>
+                    <p class="next-text">
+                        <strong>User-generated content:</strong> Launch #MyBambuStory campaign encouraging customers to share their financial journeys for authentic testimonials.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing -->
+        <div class="closing">
+            <p class="closing-text">
+                In 2025, MyBambu didn't just post content — we built trust, sparked conversations, and empowered 290K+ people to take control of their financial future. 💚
+            </p>
+        </div>
+    </div>
+</body>
+</html>
