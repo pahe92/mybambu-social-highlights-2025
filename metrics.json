@@ -13,19 +13,34 @@
   "engagement_rate": 0.81,
   "platforms": {
     "facebook": {
-      "followers": 0,
+      "followers": 65335,
       "impressions": 311719,
       "reactions": 46446
     },
     "instagram": {
-      "followers": 0,
+      "followers": 79392,
       "impressions": 2130877,
       "reactions": 22529
     },
     "tiktok": {
-      "followers": 0,
+      "followers": 130571,
       "impressions": 22195313,
       "reactions": 88097
+    },
+    "linkedin": {
+      "followers": 1951,
+      "impressions": 0,
+      "reactions": 0
+    },
+    "twitter": {
+      "followers": 737,
+      "impressions": 0,
+      "reactions": 0
+    },
+    "youtube": {
+      "followers": 12800,
+      "impressions": 0,
+      "reactions": 0
     }
   }
 }
